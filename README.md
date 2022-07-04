@@ -7,8 +7,8 @@
 
 * 동작 파라미타화
   * 추상적 조건으로 필터링 (Predicate 사용)
-  * Predicate란?
-    * 인수로 값을 받아 true or false로 반환하는 함수를 predicate라 부른다.
+  * Predicate 란?
+    * 인수로 값을 받아 true or false 로 반환하는 함수를 predicate라 부른다.
     * 제네릭을 사용해 사과 뿐만 아니라 모든 과일에서 유동적으로 필터링이 가능하게 만들었다.
     
 
@@ -20,12 +20,24 @@
 
 * 요구 추가 (과일 무게순으로 정렬하기)
   * Comparator (두 매개변수 객체를 비교) 정렬
-    * compare(T o1, T o2) override 해 사용.
+    * compare(T o1, T o2) override 해 사용
   
-~~~ 
-      o1.getXXX > o2.getXXX return 1;  
-      o1.getXXX == o2.getXXX return 0;
-      o1.getXXx < o2.getXXX return -1;
-~~~
+    * ~~~ 
+          o1.getXXX > o2.getXXX return 1;  
+          o1.getXXX == o2.getXXX return 0;
+          o1.getXXx < o2.getXXX return -1; 
+      ~~~
   * 람다 사용
-  * 람다 -> 메소드 참조형식으로 변경
+  * 람다 -> 메소드 참조 형식으로 변경
+  
+
+### 동작 파라미터화 정리
+1. 메서드 내부적으로 다양한 동작을 수행할 수 있도록 코드를 메서드 인수로 전달.
+2. 1번과정을 추상화를 잘 시켜놓으면 변화하는 요구사항에 더 잘 대응할 수 있는 코드를 구현할 수 있다.
+그렇게 되면 추 후 엔지니어링 비용을 줄일 수 있다.
+3. 코드 전달 기법을 이용해 메서드의 인수를 전달 할 수 있었지만. 추가로 구현해야 하는 코드들이 
+지저분 했다 인터페이스를 상속받아 여러 클래스를 구현해야 하는 수고를 덜어보자.
+
+
+# Chapter 2 람다 표현
+
