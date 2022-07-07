@@ -18,8 +18,5 @@ public class FilterFruit {
         }
         return result;
     }
-
-
-
 }
 
