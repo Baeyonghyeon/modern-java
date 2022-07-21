@@ -26,7 +26,7 @@
           o1.getXXX > o2.getXXX return 1;  
           o1.getXXX == o2.getXXX return 0;
           o1.getXXx < o2.getXXX return -1; 
-      ~~~
+      
     * 람다 사용
     * 람다 -> 메소드 참조 형식으로 변경
 
@@ -66,4 +66,16 @@
   * 데이터 베이스 파일 처리 같이 사용하는 순환 패턴은 자원을 열고, 처리한 다음 자원을 닫는 순서로
   이루어 진다. 설정과 정리 과정은 대부분 비슷하다.  
   즉. 실제 자원을 처리하는 코드를 설정과 정리 두 과정이 둘러싸는 형태를 갖는다.  
-    (ReadProcess.class는 java7에 추가된 try-with-resources 구문 사용) 
+    (ReadProcess.class는 java7에 추가된 try-with-resources 구문 사용)
+
+
+* BufferedReaderProcessorImpl은 @FucntionalInterface를 두가지 방법으로 구현했다.
+  1. override
+  2. 시그니처와 일치하는 함수형 인터페이스를 만들면 lambdaSampleFunction 처럼 메서드의 인수로 전달할 수 있다.
+
+
+# Chapter 3 함수형 데이터 처리
+
+* 스트림
+  * 멀티스레드 코드를 구현하지 않아도 데이터를 투명하게 병렬로 처리할 수 있다.
+  * 
