@@ -19,3 +19,8 @@ l
 <src/chapter2/excutearoundpatten/BufferedReaderProcessor.java,5/a/5a17767a35f0faae3cea3da54fadfa816f5ea430
 p
 @src/chapter2/excutearoundpatten/BufferedReaderProcessorImpl.java,2/3/23a4aed315bbf06c8618b933cffa410678a58283
+Z
+*src/chapter2/Cosumer/ConsumerExample1.java,5/f/5fdf34e78b8cec728f8142a02b314e27b4714ba0
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
