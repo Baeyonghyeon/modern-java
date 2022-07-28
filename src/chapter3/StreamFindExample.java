@@ -33,10 +33,10 @@ public class StreamFindExample {
          * why : findFirst 와 findAny는 언제 사용할까?
          * 병렬성 때문에
          */
-        List<Integer> someNumbers = Arrays.asList(1,2,3,4,5);
+        List<Integer> someNumbers = Arrays.asList(1, 2, 3, 4, 5);
         someNumbers.stream()
-                .map(n -> n*n)
-                .filter(n -> n%3 == 0)
+                .map(n -> n * n)
+                .filter(n -> n % 3 == 0)
                 .findFirst()
                 .ifPresent(number -> System.out.println(number));
     }
