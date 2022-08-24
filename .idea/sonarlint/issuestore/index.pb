@@ -30,9 +30,11 @@ r
 Bsrc/chapter1/Predicate/PredicateImpl/HeavyWeightSortPredicate.java,3/5/357ad51b38b0446a398c9b828345378c3eeb5a25
 n
 >src/chapter1/Predicate/PredicateImpl/HeavyWeightPredicate.java,0/d/0da19df69ed9caf548d8d435505f58fef460a8cf
-9
-	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 M
 src/chapter1/FilterFruit.java,0/4/044691ec15abc8e02aa129f1cdba36e4cf046e81
 F
 src/chapter1/Main.java,c/8/c817f6d90d23a9d76cf90cb48b89800a52157db1
+S
+#src/chapter3/StreamFindExample.java,1/e/1e799bf1323294978e486559b70f0031cfa3e5a5
+M
+src/chapter3/test/Trader.java,0/7/07afdaa5aab26662eac0594180673430f22b2ee9

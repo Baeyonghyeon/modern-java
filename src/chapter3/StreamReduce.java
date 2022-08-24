@@ -1,14 +1,11 @@
 package chapter3;
 
-import javax.swing.text.html.Option;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.Optional;
-import java.util.function.BinaryOperator;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class StreamReduce {
+
+    static int num;
 
     static List<Dish> menu = Arrays.asList(
             new Dish("pork", false, 800, Dish.Type.MEAT),
@@ -24,6 +21,17 @@ public class StreamReduce {
 
     public static void main(String[] args) {
         List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+
+        /**
+         * 리스트 평균 구하기
+         */
+        double avg = numbers.stream()
+                .mapToInt(Integer::intValue)
+                .average()
+                .orElse(0.0);
+
+
+        System.out.println(avg);
 
         /**
          *  두 요소를 조합해서 만드는 reduce 메서드
@@ -70,5 +78,24 @@ public class StreamReduce {
         long count2 = menu.stream()
                 .count();
         System.out.println("count2 : " + count2);
+
+
+
+
+        List<Integer> sumList = Arrays.asList(1,2,3);
+
+        Optional<Integer> result = sumList.stream()
+                .reduce(Integer::sum);
+
+        result.ifPresentOrElse(
+                (r) -> num =  r,
+        () -> num = 0
+    );
+
+         int n = sumList.stream().mapToInt(l -> l).reduce(Integer::sum).getAsInt();
+
+        System.out.println(num);
+
+        System.out.println(n);
     }
 }
