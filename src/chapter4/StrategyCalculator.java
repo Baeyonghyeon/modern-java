@@ -31,6 +31,8 @@ public class StrategyCalculator {
                 break;
             }
         }
+
+        br.close();
     }
 
     public static void InitTerminal(){
