@@ -56,7 +56,7 @@ public class StreamExample {
         System.out.println("filterMenu3 : " + filterMenu3);
 
         /**
-         * skip - 처음 n개 요소를 제외한 스트림ㅇ르 반환한다.
+         * skip - 처음 n개 요소를 제외한 스트림을 반환한다.
          */
         List<Dish> dishes = menu.stream()
                 .filter(d -> d.getCalories() > 300)
@@ -113,6 +113,5 @@ public class StreamExample {
                 .collect(Collectors.toList());
         System.out.println(pairs2);
     }
-
 
 }
