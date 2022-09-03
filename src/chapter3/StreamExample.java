@@ -1,9 +1,8 @@
 package chapter3;
 
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.Arrays;
 import java.util.List;
+import java.util.OptionalInt;
 import java.util.stream.Collectors;
 
 public class StreamExample {
@@ -108,10 +107,70 @@ public class StreamExample {
          */
         List<int[]> pairs2 = numbers1.stream()
                 .flatMap(i -> numbers2.stream()
-                        .filter(j -> (i+j) % 3 == 0)
-                        .map(j -> new int[]{i,j}))
+                        .filter(j -> (i + j) % 3 == 0)
+                        .map(j -> new int[]{i, j}))
                 .collect(Collectors.toList());
         System.out.println(pairs2);
+
+        /**
+         * distinct() - 중복제거
+         */
+        List<String> names = Arrays.asList("코딩", "박해커", "코딩", "최자바", "박해커");
+        String[] str = names.stream()
+                .distinct()
+                .sorted()
+                .toArray(String[]::new);
+        System.out.println(Arrays.toString(str));
+
+        /**
+         * 중복을 제거하고 김씨 성을 가진 이름들을 정렬하여 문자열 배열로 리턴.
+         */
+        String[] str2 = names.stream()
+                .distinct()
+                .sorted()
+                .filter(l -> l.startsWith("김"))
+                .toArray(String[]::new);
+        System.out.println(Arrays.toString(str2));
+
+        /**
+         * int 타입을 요소로 가지는 배열을 입력받아 가장 큰 요소를 리턴
+         */
+        int[] arr = {1, 10, 5, 32, 5};
+        OptionalInt num = OptionalInt.of(Arrays.stream(arr)
+                .max()
+                .orElse(0));
+        System.out.println(num.getAsInt());
+
+        /**
+         * String 타입을 요소로 가지는 배열을 입력받아, 가장 길이가 긴 문자열 요소의 길이를 리턴
+         */
+        String[] strArr = {"codestates", "java", "backend", "programming"};
+        OptionalInt out = OptionalInt.of(Arrays.stream(strArr)
+                .mapToInt(String::length)
+                .max()
+                .orElse(0));
+        System.out.println(out.getAsInt());
+
+        /**
+         * Integer 타입을 요소로 가지는 List를 입력받아 각 요소에 2를 곱한 새로운 List를 리턴
+         */
+        List<Integer> list = Arrays.asList(1, 2, 3, 4, 5);
+        List<Integer> listResult = list.stream()
+                .map(l -> l * 2)
+                .collect(Collectors.toList());
+        System.out.println(listResult);
+
+        int[] temperature = {25, 29, 30, 31, 26, 30, 33};
+
+        long aboveCount = Arrays.stream(temperature)
+                .filter(temp -> temp >= 30)
+                .count();
+
+        System.out.println(aboveCount);
+
+        if (aboveCount >= 3) {
+            System.out.println(aboveCount);
+        }
     }
 
 }
