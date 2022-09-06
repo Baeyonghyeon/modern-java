@@ -42,5 +42,5 @@ F
 src/chapter1/Main.java,c/8/c817f6d90d23a9d76cf90cb48b89800a52157db1
 F
 src/chapter3/Dish.java,a/f/af50a75654f8cc3fbbce9589d19f9631853fa689
-T
-$src/chapter4/StrategyCalculator.java,b/c/bc8984edee9685903cb317f8790f90a1ba603919
+S
+#src/chapter3/StreamFindExample.java,1/e/1e799bf1323294978e486559b70f0031cfa3e5a5
