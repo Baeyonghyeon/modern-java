@@ -1,6 +1,7 @@
 package chapter1;
 
 import chapter1.Color.Color;
+import chapter1.Predicate.Predicate;
 import chapter1.Predicate.PredicateImpl.GreenColorPredicate;
 import chapter1.Predicate.PredicateImpl.HeavyWeightPredicate;
 import chapter1.Vo.Apple;
@@ -30,8 +31,8 @@ public class Main {
         List<Fruit> BananaBasket = Arrays.asList(new Banana(130, Color.GREEN)
                 , new Banana(170, Color.RED));
 
-        HeavyWeightPredicate heavyWeightPredicate = new HeavyWeightPredicate();
-        GreenColorPredicate greenColorPredicate = new GreenColorPredicate();
+        Predicate heavyWeightPredicate = new HeavyWeightPredicate();
+        Predicate greenColorPredicate = new GreenColorPredicate();
 
         //클래스를 활용한 동작 파라미터화
         System.out.println("Apple Weight : " + filterApple.filterApples(AppleBasket, heavyWeightPredicate));
