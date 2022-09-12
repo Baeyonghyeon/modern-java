@@ -5,6 +5,7 @@ import chapter5.repository.ReviewRepository;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class ReviewRepositoryImpl implements ReviewRepository {
 
@@ -20,16 +21,17 @@ public class ReviewRepositoryImpl implements ReviewRepository {
         return reviews;
     }
 
-
-    // todo : 작성자 리뷰 검색
     @Override
-    public List<Review> getReviewsByUserName() {
-        return null;
+    public List<Review> getReviewsByUserName(String userName) {
+        return reviews.stream()
+                .filter(r -> r.getUsername().equals(userName))
+                .collect(Collectors.toList());
     }
 
-    // todo : 가게명으로 리뷰 검색
     @Override
-    public List<Review> getReviewsByShopName() {
-        return null;
+    public List<Review> getReviewsByShopName(String shopName) {
+        return reviews.stream()
+                .filter(r -> r.getShopName().equals(shopName))
+                .collect(Collectors.toList());
     }
 }

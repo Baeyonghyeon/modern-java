@@ -7,6 +7,7 @@ import chapter5.repository.ShopRepository;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class ShopRepositoryImpl implements ShopRepository {
 
@@ -32,17 +33,20 @@ public class ShopRepositoryImpl implements ShopRepository {
                 .anyMatch(s -> s.equals(shopName));
     }
 
-    // todo: 해당 가게에 음식이 존재하는지 체크해야 한다.
     @Override
     public boolean isCheckFood(Order order) {
-        return true;
+        Optional<Shop> shop = shops.stream()
+                .filter(s -> s.getShopName().equals(order.getShopName()))
+                .findFirst();
+
+        return shop.get().getFoods().stream()
+                .anyMatch(food -> food.getName().equals(order.getFoodName()));
     }
 
-    // todo : 주문되게 완성 하기..
     @Override
     public void orderFood(Order order) {
-        if (isCheckShop(order.getShopName()) && isCheckFood(order)){
-            //주문이 되게끔,,,?
+        if (isCheckShop(order.getShopName()) && isCheckFood(order)) {
+            System.out.println("주문 완료");
         } else {
             System.out.println("올바르지 않은 주문.");
         }

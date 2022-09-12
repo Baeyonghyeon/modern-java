@@ -10,7 +10,7 @@ public interface ReviewRepository {
 
     List<Review> getAllReviews();
 
-    List<Review> getReviewsByUserName();
+    List<Review> getReviewsByUserName(String userName);
 
-    List<Review> getReviewsByShopName();
+    List<Review> getReviewsByShopName(String shopName);
 }

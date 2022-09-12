@@ -7,12 +7,6 @@ p
 @src/chapter2/excutearoundpatten/BufferedReaderProcessorImpl.java,2/3/23a4aed315bbf06c8618b933cffa410678a58283
 Z
 *src/chapter2/Cosumer/ConsumerExample1.java,5/f/5fdf34e78b8cec728f8142a02b314e27b4714ba0
-M
-src/chapter3/test/Trader.java,0/7/07afdaa5aab26662eac0594180673430f22b2ee9
-R
-"src/chapter3/test/Transaction.java,7/f/7fa129931929fd58a259b8132d64ebcda8e02913
-M
-src/chapter3/test/Client.java,0/0/006ac8a62eab3b1c9919d457fda16e7e08015e54
 [
 +src/chapter2/SampleFunctionalInterface.java,b/2/b2ac867b15b4cdce5cef11d22d964bf0ab000549
 M
@@ -21,12 +15,8 @@ K
 src/chapter1/Vo/Orange.java,2/9/296bf346047858d5f9945c5c2b65d33ef1e62004
 M
 src/chapter1/Color/Color.java,1/3/136ecf0f1e7c66e428149913091c15f5e8fde636
-F
-src/chapter3/Dish.java,a/f/af50a75654f8cc3fbbce9589d19f9631853fa689
 S
 #src/chapter3/StreamFindExample.java,1/e/1e799bf1323294978e486559b70f0031cfa3e5a5
-O
-src/chapter3/StreamExample.java,e/5/e5d1dc05800824b64f4647fe31fa833629b25b59
 T
 $src/chapter3/StreamMatchExample.java,5/8/583a9ad544f1fa3fe32d53fcf85a40c7f4bbd262
 Q
@@ -40,8 +30,6 @@ $src/chapter4/StrategyCalculator.java,b/c/bc8984edee9685903cb317f8790f90a1ba603
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
-9
-	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 U
 %src/chapter1/Predicate/Predicate.java,0/9/099fb112fed8421a8b15d9b867d68db28bb4fb46
 r
@@ -60,3 +48,7 @@ F
 src/chapter1/Main.java,c/8/c817f6d90d23a9d76cf90cb48b89800a52157db1
 J
 src/test/BufferedMain.java,5/b/5bdcd0c22597090747aa1ac7f79d2d5f872ca5cd
+L
+src/test/ArrayEmptyTest.java,6/7/67b9d4a5e188a166462b0235e2c6497632b95ed7
+D
+src/test/Sample.java,d/1/d10486983c8ae0ef3fba21f0898294223404a0e9

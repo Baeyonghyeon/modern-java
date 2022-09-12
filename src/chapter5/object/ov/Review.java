@@ -7,7 +7,6 @@ public class Review {
     private final String foodName;
     private final int grade;
 
-    // todo : builder 패턴수정 예정
     public Review(String username, String shopName, String foodName, int grade) {
         Username = username;
         this.shopName = shopName;
