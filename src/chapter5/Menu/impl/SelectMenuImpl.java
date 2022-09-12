@@ -37,7 +37,7 @@ public class SelectMenuImpl implements SelectMenu {
 
         Food food = new Food(addList[1], Integer.parseInt(addList[2]));
 
-        if(shopRepository.isCheckShop(addList[0])){
+        if (shopRepository.isCheckShop(addList[0])) {
             shopRepository.registerFood(addList[0], food);
             System.out.println("이미등록된 가게입니다. && 음식 등록완료. ");
 
@@ -52,7 +52,6 @@ public class SelectMenuImpl implements SelectMenu {
     public void selectDashboardMenu() {
         reviewRepository.getAllReviews().stream()
                 .forEach(System.out::println);
-
     }
 
     @Override
@@ -99,11 +98,12 @@ public class SelectMenuImpl implements SelectMenu {
         System.out.println("[안내] 음식맛은 어떠셨나요? (1점 ~ 5점)");
         System.out.print(">>> ");
         feedbackList[3] = br.readLine();
+        System.out.println("리뷰 등록 완료");
 
         Review review = new Review(feedbackList[0]
                 , feedbackList[1]
                 , feedbackList[2]
-                ,Integer.parseInt(feedbackList[3]));
+                , Integer.parseInt(feedbackList[3]));
 
         reviewRepository.registerReview(review);
     }
