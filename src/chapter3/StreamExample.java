@@ -100,7 +100,10 @@ public class StreamExample {
                 .flatMap(i -> numbers2.stream()
                         .map(j -> new int[]{i, j}))
                 .collect(Collectors.toList());
-        System.out.println(pairs1);
+        pairs1.stream()
+                .map(Arrays::toString)
+                .forEach(System.out::println);
+
 
         /**
          *  이전 예제에서 합이 3으로 나누어 떨어지는 쌍만 반환하시오.
