@@ -52,3 +52,15 @@ L
 src/test/ArrayEmptyTest.java,6/7/67b9d4a5e188a166462b0235e2c6497632b95ed7
 D
 src/test/Sample.java,d/1/d10486983c8ae0ef3fba21f0898294223404a0e9
+M
+src/chapter3/test/Client.java,0/0/006ac8a62eab3b1c9919d457fda16e7e08015e54
+M
+src/chapter3/test/Trader.java,0/7/07afdaa5aab26662eac0594180673430f22b2ee9
+R
+"src/chapter3/test/Transaction.java,7/f/7fa129931929fd58a259b8132d64ebcda8e02913
+F
+src/chapter3/Dish.java,a/f/af50a75654f8cc3fbbce9589d19f9631853fa689
+Q
+!src/chapter5/object/ov/Order.java,8/3/833b9f26e89a4a5985f4cf9491eac6a8b1e2af0e
+Q
+!src/chapter5/Menu/SelectMenu.java,b/6/b66026521e15c7a8aba3858d71f79a5f77b4a0fe
