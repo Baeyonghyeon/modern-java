@@ -15,14 +15,8 @@ K
 src/chapter1/Vo/Orange.java,2/9/296bf346047858d5f9945c5c2b65d33ef1e62004
 M
 src/chapter1/Color/Color.java,1/3/136ecf0f1e7c66e428149913091c15f5e8fde636
-S
-#src/chapter3/StreamFindExample.java,1/e/1e799bf1323294978e486559b70f0031cfa3e5a5
-T
-$src/chapter3/StreamMatchExample.java,5/8/583a9ad544f1fa3fe32d53fcf85a40c7f4bbd262
 Q
 !src/chapter3/StreamNullCheck.java,2/2/22cea29cb8b038c0f806023f4494c15292cebc9f
-N
-src/chapter3/StreamReduce.java,0/a/0a62335b9b246e4e392dcb2335f0adfb3a3d4d65
 O
 src/chapter4/LambdaOperand.java,2/1/21d2769a750af8e58a0afe4fa142c4195b6ce392
 T
@@ -64,3 +58,9 @@ Q
 !src/chapter5/object/ov/Order.java,8/3/833b9f26e89a4a5985f4cf9491eac6a8b1e2af0e
 Q
 !src/chapter5/Menu/SelectMenu.java,b/6/b66026521e15c7a8aba3858d71f79a5f77b4a0fe
+f
+6src/chapter5/repository/impl/ReviewRepositoryImpl.java,b/f/bfb37be1f7d9d6ce38eb3d7f8f628e8cad2da8d4
+d
+4src/chapter5/repository/impl/ShopRepositoryImpl.java,3/8/38c287cea49d20f4435ccff544f990788f7d8f2b
+]
+-src/chapter5/repository/ReviewRepository.java,e/2/e2f4620296f48adf0be427e656c54b965b705af7

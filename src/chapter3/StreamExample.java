@@ -46,6 +46,17 @@ public class StreamExample {
                 .collect(Collectors.toList());
         System.out.println("filterMenu2 : " + filterMenu2);
 
+        List<String> male = Arrays.asList("김코딩", "최자바", "김코츠");
+        List<String> female = Arrays.asList("박해커", "김유클", "김코딩");
+        String lastName = "김";
+        List<String> concatList = Stream.concat(male.stream(), female.stream())
+                .distinct()
+                .sorted()
+                .takeWhile(l -> l.startsWith(lastName))
+                .collect(Collectors.toList());
+
+        System.out.println("concatList : "+ concatList);
+
         /**
          * dropWhile takeWhile과 다르게 나머지 요소를 선택하고 싶을때 사용한다.
          */
