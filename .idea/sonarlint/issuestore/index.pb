@@ -40,10 +40,6 @@ J
 src/chapter1/Vo/Fruit.java,0/d/0dab55f873c441cdb68f2909c6bb2670106081ec
 F
 src/chapter1/Main.java,c/8/c817f6d90d23a9d76cf90cb48b89800a52157db1
-J
-src/test/BufferedMain.java,5/b/5bdcd0c22597090747aa1ac7f79d2d5f872ca5cd
-L
-src/test/ArrayEmptyTest.java,6/7/67b9d4a5e188a166462b0235e2c6497632b95ed7
 D
 src/test/Sample.java,d/1/d10486983c8ae0ef3fba21f0898294223404a0e9
 M
@@ -64,3 +60,9 @@ d
 4src/chapter5/repository/impl/ShopRepositoryImpl.java,3/8/38c287cea49d20f4435ccff544f990788f7d8f2b
 ]
 -src/chapter5/repository/ReviewRepository.java,e/2/e2f4620296f48adf0be427e656c54b965b705af7
+P
+ src/chapter5/object/ov/Food.java,3/2/329ba725f60b3b7e72876cc252ff766fe3d1b61a
+Z
+*src/chapter5/Menu/impl/SelectMenuImpl.java,f/9/f9753e8a74b767c90caef6153b634a0767e61432
+O
+src/chapter3/StreamExample.java,e/5/e5d1dc05800824b64f4647fe31fa833629b25b59
