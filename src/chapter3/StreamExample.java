@@ -28,7 +28,6 @@ public class StreamExample {
                 .collect(Collectors.toList());
         System.out.println("threeHighCaloricDishNames : " + threeHighCaloricDishNames);
 
-
         List<String> filterMenu1 = menu.stream()
                 .filter(dish -> dish.getCalories() < 320)
                 .map(Dish::getName)
