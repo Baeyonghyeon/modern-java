@@ -92,7 +92,7 @@ public class StreamReduce {
         () -> num = 0
     );
 
-         int n = sumList.stream().mapToInt(l -> l).reduce(Integer::sum).getAsInt();
+        int n = sumList.stream().mapToInt(l -> l).reduce(Integer::sum).getAsInt();
 
         System.out.println(num);
 
